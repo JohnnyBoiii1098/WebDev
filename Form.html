@@ -1,17 +1,20 @@
 <html>
     <head>
         <title>Form</title>
+        <link rel="stylesheet" href="FormStyle.css">
     </head>
-    <body style="background-color: #23001E;border: 20px solid #FFBA49;">
-        <h1 style="color: #A4A9AD;text-align: center;">A Basic Form</h1>
+    <body>
+        <h1>Registration Form</h1>
         <form>
-            <label for="Name" style="color: #A4A9AD;font-size: 20px;padding-right: 29px;margin-left: 30px;">Name:</label>
-            <input type="text" id="Name" name="Name" style="color: #A4A9AD;">
-            <br>
-            <label for="Password" style="color: #A4A9AD;font-size: 20px;margin-left: 30px;">Password:</label>
-            <input type="password" id="Password" name="Password" style="color: #A4A9AD;">
-            <br><br>
-            <input type="submit" value="Submit" style="color: #23001E;font-size: 20px;margin-left: 120px;">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="confirm-password">Confirm Password:</label><br>
+            <input type="password" id="confirm-password" name="confirm-password"><br><br>
+            <input type="submit" value="Submit">
         </form>
     </body>
 </html>
