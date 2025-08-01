@@ -1,0 +1,24 @@
+h1{
+    color:#9E7682;
+    font-size: 30px;
+}
+h3{
+    color: #F7C4A5;
+    font-size: 20px;
+}
+p{
+    color: #EDCB96;
+    font-size: 16px;
+}
+body{
+    padding: 20px;
+    background-color: #4D4861;
+    border: 10px solid #F7C4A5;
+    border-radius: 15px;
+    width: auto;
+}
+div{
+    border: 5px solid #9E7682;
+    padding: 15px;
+    border-radius: 10px;
+}
