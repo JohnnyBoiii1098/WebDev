@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Temp-Converter</title>
+    </head>
+    <body>
+        <h1>Temperature Converter</h1>
+        <form id="tempForm">
+            <label for="tempInput">Enter temperature:</label>
+            <input type="number" id="tempInput" required>
+            <select id="unitSelect">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+            </select>
+            <button type="submit">Convert</button>
+        </form>
+        <div id="result"></div>
+        <script>
+            document.getElementById('tempForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const tempInput = parseFloat(document.getElementById('tempInput').value);
+                const unit = document.getElementById('unitSelect').value;
+                let result;
+                if (unit === 'C') {
+                    result = (tempInput * 9/5) + 32; // Convert Celsius to Fahrenheit
+                    document.getElementById('result').innerText = `${tempInput}°C is ${result.toFixed(2)}°F`;
+                } else {
+                    result = (tempInput - 32) * 5/9; // Convert Fahrenheit to Celsius
+                    document.getElementById('result').innerText = `${tempInput}°F is ${result.toFixed(2)}°C`;
+                }
+            });
+        </script>
+    </body>
+</html>
