@@ -7,23 +7,11 @@
         <p>This page demonstrates the use of arrays and in-built objects in JavaScript.</p>
         <div id="arrayDemo">
             <script>
-                // Define an array
                 const fruits = ["Apple", "Banana", "Cherry", "Date"];
-                
-                // Display the array
-                document.getElementById('arrayDemo').innerHTML = `
-                    <h2>Fruits Array</h2>
-                    <p>${fruits.join(", ")}</p>
-                `;
-
-                // Use an in-built object method
+                document.getElementById('arrayDemo').innerHTML = `<h2>Fruits Array</h2><p>${fruits.join(", ")}</p>`;
                 const numbers = [1, 2, 3, 4, 5];
                 const sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
-                
-                document.getElementById('arrayDemo').innerHTML += `
-                    <h2>Sum of Numbers</h2>
-                    <p>The sum of the numbers is: ${sum}</p>
-                `;
+                document.getElementById('arrayDemo').innerHTML += `<h2>Sum of Numbers</h2><p>The sum of the numbers is: ${sum}</p>`;
             </script>
         </script>
         </div>
