@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Validation Page using JS</title>
+    </head>
+    <body>
+        <h1>Validation Examples</h1>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="age">Age (18-99):</label>
+            <input type="number" id="age" name="age" min="18" max="99" required>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+            document.querySelector('form').addEventListener('submit', function(event) {
+                const email = document.getElementById('email').value;
+                const age = document.getElementById('age').value;
+
+                if (!email.includes('@')) {
+                    alert('Please enter a valid email address.');
+                    event.preventDefault();
+                }
+
+                if (age < 18 || age > 99) {
+                    alert('Age must be between 18 and 99.');
+                    event.preventDefault();
+                }
+            });
+        </script>
+    </body>
+</html>
